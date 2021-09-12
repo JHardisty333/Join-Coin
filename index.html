@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<title>JoinCoin</title>
+
+<!-- Temporarily commenting these until html is built and style sheet flow is established -->
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+            <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+            <link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@300&display=swap" rel="stylesheet"/> -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+
+
+<link rel="stylesheet" href='assets/css/style.css' />
+
+
+</head>
+
+<body>
+    <!-- navigation -->
+    <header>
+        <h1>
+            <a class="main-title" href="/">JoinCoin</a>
+        </h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="./about-us.html">Learn more about us and Crypto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- hero/jumbotron -->
+    <section class="hero">
+        <div class="hero-form">
+            <h3>Search Your Favorite Crypto:</h3>
+            <p>Get the latest news and financial information about your favorite cryptocurrency.</p>
+            <!-- Add form element -->
+            <form>
+                <label for="coinName">Enter Coin Name</label>
+                <input type="text" placeholder="i.e. Bitcoin..." name="coinName" id="coinName" class="form-input" />
+                <button type="submit" id="submit-search">Search Coin</button>
+            </form>
+        </div>
+    </section>
+    <!-- end hero -->
+
+    <!-- "A Quick Look" section -->
+    <section id="quick-look" class="look">
+        <h2 class="section-title primary-border">A Quick Look Into Cryptocurrency</h2>
+
+        <article class="snapshot">
+            <div class="snapshot-info">
+                <h3 class="snapshot-name">Your Searched Currencies</h3>
+                <div class="container">
+                    <ul id="searched" class="row searched-columns">
+                        <li id="logo" class="col-2">Logo</li>
+                        <li id="coin-name" class="col-2">Coin Name</li>
+                        <li id="price" class="col-2">Price</li>
+                        <li id="market-cap" class="col-3">Market Cap</li>
+                        <li id="volume" class="col-3">Volume</li>
+                        <!--<li class="col-2"></li> -->
+
+
+                        <!-- 'Price' and 'Trend' will have variable links added later -->
+
+                    </ul>
+                </div>
+            </div>
+        </article>
+        <!-- Highest Valued Currencies-->
+        <div class="following">
+
+
+            <!-- Fastest Growing Currencies -->
+            <article class="snapshot">
+                <div class="snapshot-info">
+                    <h3 class="snapshot-name">About Coin:</h3>
+                    <p id="about-coin"></p>
+                </div>
+            </article>
+
+            <!-- trending currencies -->
+            <article class="snapshot">
+                <div class="snapshot-info">
+                    <h3 class="snapshot-name">Trending Currencies</h3>
+                    <ul id="trending">
+
+                    </ul>
+                </div>
+            </article>
+
+            <!-- Recent News Section -->
+            <article class="snapshot">
+                <div class="snapshot-info">
+                    <h3 class="snapshot-name">Latest Crypto News</h3>
+                    <ul id="news">
+                    </ul>
+                </div>
+            </article>
+
+            <!-- Recent Searches Section -->
+            <article class="snapshot">
+                <div class="snapshot-info">
+                    <h3 class="snapshot-name">Recent Searches</h3>
+                    <ul id="recent-searches">
+                    </ul>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <h2> Made by CryptoCoder42 </h2>
+        <div>
+            <a href="./about-us.html"> Read Our About Us</a><br /> Est. June 2021
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
+    <script src="./assets/js/start.js"></script>
+</body>
+
+</html>
+
+</body>
+
+</html>
